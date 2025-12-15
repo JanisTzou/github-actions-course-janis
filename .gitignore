@@ -1,0 +1,18 @@
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary / backup files
+*~
+*.swp
+*.tmp
+
+# Environment variables (often used in Actions demos)
+.env
+.env.*
