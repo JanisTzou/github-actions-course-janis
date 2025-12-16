@@ -1,0 +1,16 @@
+name: "03 Parallel examples"
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Linting step
+      run: echo "running linting..."
+  unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Unit tests step
+      run: echo "running unit tests ..."
