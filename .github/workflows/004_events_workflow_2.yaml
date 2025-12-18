@@ -1,0 +1,16 @@
+name: 04 Workflow after other workflow ran
+
+on:
+  workflow_run:
+    workflows: [04 workflow with user inputs]
+    types:
+      - completed
+
+jobs:
+  secondWorkflowJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Second workflow running ...
+        run: echo "Running second"
+
+    
