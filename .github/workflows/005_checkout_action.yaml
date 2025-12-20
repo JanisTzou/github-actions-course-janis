@@ -12,5 +12,5 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
       - name: Print contents of working dir (2)
-        run: ls -la ${{ guthub.workspace }}
+        run: ls -la ${{ github.workspace }}
       
