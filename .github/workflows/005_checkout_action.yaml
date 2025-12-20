@@ -12,8 +12,20 @@ jobs:
     steps:
       - name: Print contents of working dir (1)
         run: ls -la ${{ github.workspace }}
-      - name: Checkout source code
+      - name: Checkout source code (1)
         uses: actions/checkout@v4
       - name: Print contents of working dir (2)
         run: ls -la ${{ github.workspace }}
+      - name: Clean working dir
+        run: rm -rf ./*
+      - name: Print contents of working dir (3)
+        run: ls -la ${{ github.workspace }}
+      - name: Create new dir and cd
+        run: |
+          mkdir janis_dir
+          cd janis_dir
+      - name: Checkout source code (2)
+        uses: actions/checkout@v4
+      - name: Print contents of janis dir
+        run: ls -la ${{ github.workspace/ }}/janis_dir
       
