@@ -1,6 +1,9 @@
 name: 05 Checkout Action
 
 on:
+  push: # just so it runs automatically on subsequent updates
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
