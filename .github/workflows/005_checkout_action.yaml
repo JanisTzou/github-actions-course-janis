@@ -23,7 +23,7 @@ jobs:
       - name: Create new dir and cd
         run: |
           mkdir janis_dir
-          cd janis_dir
+          cd ${{ github.workspace }}/janis_dir
       - name: Print contents of working dir (4)
         run: ls -la ${{ github.workspace }}
       - name: Checkout source code (2)
