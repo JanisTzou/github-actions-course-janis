@@ -29,5 +29,5 @@ jobs:
       - name: Checkout source code (2)
         uses: actions/checkout@v4
       - name: Print contents of janis dir
-        run: ls -la ${{ github.workspace }}/janis_dir
+        run: ls -la ${{ github.workspace }}
       
