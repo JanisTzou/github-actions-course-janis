@@ -20,6 +20,7 @@ jobs:
     steps:
     - name: Data Receiver
       id: data-receiver
+      # notice how we reference the data of the JOB using its name  
       run: |
-        echo ${{ needs.data-sender-job.outputs.name }}
+        echo ${{ needs.data-sender-job.outputs.name }}.
     
