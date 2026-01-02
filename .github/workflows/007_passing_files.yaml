@@ -24,7 +24,7 @@ jobs:
           ls -la ${{ github.workspace }}/backend
         
       - name: Upload Artifact - test report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: coverage
           path: ${{ github.workspace }}/backend/.coverage
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download Artifact - test report
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: coverage
           path: ${{ github.workspace }}
