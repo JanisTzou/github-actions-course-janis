@@ -28,6 +28,8 @@ jobs:
         with:
           name: coverage
           path: ${{ github.workspace }}/backend/.coverage
+          include-hidden-files: true # this needs to be set - probably due to our later version of the action
+
 
   load-file-example:
     runs-on: ubuntu-latest
