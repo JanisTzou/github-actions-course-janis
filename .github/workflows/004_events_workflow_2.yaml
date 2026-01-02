@@ -2,7 +2,7 @@ name: 04 Workflow after other workflow ran
 
 on:
   workflow_run:
-    workflows: [04 workflow with user inputs]
+    workflows: [04 workflow with user inputs] # notice that we refer to the first workflow by name
     types:
       - completed
 
