@@ -21,5 +21,5 @@ jobs:
     - name: Data Receiver
       id: data-receiver
       run: |
-        echo ${{ needs.data-sender.outputs.name }}
+        echo ${{ needs.data-sender-job.outputs.name }}
     
