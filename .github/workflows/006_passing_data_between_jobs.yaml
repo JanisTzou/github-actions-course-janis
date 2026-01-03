@@ -16,7 +16,7 @@ jobs:
 
   data-receiver-job:
     runs-on: ubuntu-latest
-    needs: ["data-sender-job"] # notice how the Job name is in quotes
+    needs: ["data-sender-job"] # notice how the Job name is in quotes - but it actually does not need to be ...
     steps:
     - name: Data Receiver
       id: data-receiver
